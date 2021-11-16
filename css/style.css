@@ -29,7 +29,8 @@ html {
 .inner {
   position: relative;
   margin: 0 auto;
-  width: 1650px;
+  width: 100%;
+  padding: 0 135px;
 }
 
 #nav {
@@ -38,11 +39,12 @@ html {
   height: 80px;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 #popup__nav {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 30%;
   height: 100vh;
   background-color: var(--background-color);
@@ -109,7 +111,135 @@ html {
   background-position: right;
   background-size: cover;
 }
-#main__footer {
+
+.about__img img {
+  width: 100%;
+  height: 872px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__text {
+  font-family: "Pretendard-Regular";
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: right;
+  margin-top: 55px;
+}
+#product {
+  position: relative;
+  padding-top: 110px;
+  height: 100%;
+  padding-bottom: 341px;
+}
+.product__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product__container a {
+  text-decoration: none;
+  color: #585858;
+}
+.product__img img {
+  width: 398px;
+  height: 525px;
+}
+.product__text {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-family: "Pretendard-Light";
+}
+.contact__container {
+  display: flex;
+  padding: 276px 140px;
+}
+.contact__text-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.contact__text {
+  text-align: left;
+  margin-bottom: 44px;
+  font-family: "Pretendard-Light";
+}
+.contact__title img {
+  width: 205px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 12px;
+}
+.fa-phone-alt,
+.fa-envelope {
+  margin-right: 16px;
+}
+.contact__myEmail {
+  margin-top: 22px;
+  font-family: "Pretendard-Regular";
+}
+.contact__myTel {
+  font-family: "Pretendard-Regular";
+}
+/* email */
+.honeypot-field {
+  display: none;
+}
+.gform {
+  flex-grow: 2;
+  height: 100%;
+}
+.contact__contents {
+  font-family: "Pretendard-Light";
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  text-align: left;
+}
+.contact__personalform {
+  display: flex;
+  justify-content: center;
+}
+.contact__personalform .contact__form {
+  width: 50%;
+}
+.contact__personalform .contact__form:first-child {
+  margin-right: 20px;
+}
+.contact__form input {
+  width: 100%;
+  height: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.contact__contents textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  width: 100%;
+  height: 165px;
+}
+.contact__btn {
+  width: 193px;
+  height: 46px;
+  border-radius: 10px;
+  color: var(--background-color);
+  font-size: 1.6rem;
+  line-height: 1.19rem;
+  background-color: #2b2b2b;
+  margin-top: 34px;
+}
+#footer {
   width: 100%;
   height: 288px;
   background-color: var(--background-color);

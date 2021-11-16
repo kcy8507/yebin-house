@@ -11,6 +11,7 @@
 
 $(".nav__toggle").click(function () {
   $("#popup__nav").toggle();
+  //overflow클래스를 만들어서 body에 따로.addclass
 });
 $(".cancel")
   .unbind("click")

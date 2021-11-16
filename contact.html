@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="/js/main.js" defer></script>
+    <title>yebin house</title>
+  </head>
+  <body>
+    <section id="nav">
+      <div class="inner">
+        <div class="nav__container">
+          <div class="nav__toggle">
+            <a href="#" class="navbar__toggleBtn"
+              ><img src="/images/hamburger_blk.svg"
+            /></a>
+          </div>
+          <div class="nav__logo"><a href="/index.html">yebin house</a></div>
+        </div>
+      </div>
+    </section>
+    <section id="popup__nav">
+      <div class="popup__nav-container">
+        <div class="popup__nav-cancel">
+          <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+        </div>
+        <div class="popup__nav-logo"><a href="/index.html">yebin house</a></div>
+        <ul class="popup__nav-list">
+          <li><a href="/about.html">about</a></li>
+          <li><a href="/product.html">product</a></li>
+          <li><a href="/instagram.html">instagram</a></li>
+          <li><a href="/contact.html">contact</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="inner">
+        <div class="contact__container">
+          <div class="contact__text-container">
+            <div class="contact__title">
+              <img src="/images/contact.png" alt="" />
+            </div>
+            <div class="contact__text">
+              yebin house에게 부담없이 문의주세요<br />
+              문의 내용 확인 후 연락 드리겠습니다.
+            </div>
+            <div class="contact__myTel">
+              <i class="fas fa-phone-alt"></i>010 0000-0000
+            </div>
+            <div class="contact__myEmail">
+              <i class="far fa-envelope"></i>yebinhouse@gmail.com
+            </div>
+          </div>
+          <form
+            class="contact__contents gform"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbwv6BR7gJ1izmctaO_0cP-DU035rtTgD8etimTh/exec"
+          >
+            <div class="contact__personalform">
+              <div class="contact__form">
+                <label>이름</label>
+                <input id="name" name="이름" required />
+              </div>
+              <div class="contact__form">
+                <label>전화번호</label>
+                <input id="phone" name="전화번호" required />
+              </div>
+            </div>
+            <div class="contact__form">
+              <label>이메일주소</label>
+              <input
+                id="email"
+                name="이메일주소"
+                type="text"
+                value=""
+                required
+              />
+            </div>
+            <div class="contact__contents">
+              <label>문의내용</label>
+              <textarea id="message" name="문의내용"></textarea>
+            </div>
+            <fieldset class="pure-group honeypot-field">
+              <label for="honeypot"
+                >To help avoid spam, utilize a Honeypot technique with a hidden
+                text field; must be empty to submit the form! Otherwise, we
+                assume the user is a spam bot.</label
+              >
+              <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
+            <button class="contact__btn">문의하기</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <p class="footer__info">
+        +82 10-0000-0000
+        <br />
+        yebinhouse
+        <br /><br />
+        Company:yebinhouse Ceo:park yebin Address:yeosu,000000
+        <br />
+        business license.000-00-000
+        <br />
+        copyright:@yebinhouse
+      </p>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
