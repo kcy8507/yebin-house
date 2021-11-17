@@ -11,11 +11,25 @@
 
 $(".nav__toggle").click(function () {
   $("#popup__nav").toggle();
-  //overflow클래스를 만들어서 body에 따로.addclass
+  $("body").addClass("overflow");
 });
 $(".cancel")
   .unbind("click")
   .bind("click", function () {
     $("#popup__nav").toggle();
+    $("body").removeClass("overflow");
   });
-//스크롤 방지 기능 아직 안했음!!
+
+// 스크롤 시 nav fade-in
+
+// $(function () {
+//   $(document).on("scroll", function () {
+//     if ($(window).scrollTop() > 100) {
+//       $("#nav").removeClass("deactive");
+//       $("#nav").addClass("active");
+//     } else {
+//       $("#nav").removeClass("active");
+//       $("#nav").addClass("deactive");
+//     }
+//   });
+// });
