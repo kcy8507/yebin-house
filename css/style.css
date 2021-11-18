@@ -98,10 +98,9 @@ body {
   height: 30px;
   margin-bottom: 11px;
 }
-.popup__nav-logo {
-  width: 157px;
+.popup__nav-logo img {
+  width: 158px;
   height: 35px;
-  background-color: rgb(77, 8, 8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,15 +122,21 @@ body {
 .nav__container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .nav__toggle {
   width: 30px;
   height: 30px;
+  position: absolute;
+  left: 0;
 }
-.nav__logo {
-  width: 157px;
+.nav__toggle img {
+  justify-self: flex-start;
+}
+.nav__logo img {
+  width: 158px;
   height: 35px;
-  background-color: rgb(77, 8, 8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,12 +160,21 @@ body {
   background-size: cover;
   background-image: url(../images/about_bg.png);
 }
-.about__text {
+.about__title {
+  display: flex;
+  justify-content: flex-end;
+}
+.about__title img {
+  margin-top: 32px;
+  width: 417px;
+  height: 50px;
+}
+.about__content {
   font-family: "Pretendard-Regular";
   font-size: 1.6rem;
   line-height: 2.8rem;
   text-align: right;
-  margin-top: 55px;
+  margin-top: 24px;
 }
 #product {
   position: relative;
@@ -276,6 +290,11 @@ body {
   background-color: #2b2b2b;
   margin-top: 34px;
 }
+#instagram {
+  width: 100%;
+  height: 100%;
+  padding: 110px 0;
+}
 #footer {
   width: 100%;
   height: 288px;
@@ -346,9 +365,6 @@ body {
   .about__bgimg {
     background-image: url(../images/about_bg834.png);
   }
-  .about__text {
-    width: 50%;
-  }
   #about .inner {
     display: flex;
     justify-content: flex-end;
@@ -367,6 +383,9 @@ body {
     width: 536px;
     height: 704px;
   }
+  #instagram {
+    padding-bottom: 0;
+  }
 }
 @media screen and (max-width: 575px) {
   #main {
@@ -376,10 +395,14 @@ body {
     background-image: url(../images/about_bg576.png);
   }
   .about__text {
-    width: 80%;
+    width: 90%;
     font-family: "Pretendard-Regular";
     line-height: 2rem;
     margin-top: 35px;
+  }
+  .about__title img {
+    width: 270px;
+    height: 33px;
   }
   .product__img img {
     width: 100%;
